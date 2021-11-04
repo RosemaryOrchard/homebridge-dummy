@@ -13,6 +13,7 @@ module.exports = function(homebridge) {
 function DummySwitch(log, config) {
   this.log = log;
   this.name = config.name;
+  this.entity_id = config.id;
   this.stateful = config.stateful;
   this.reverse = config.reverse;
   this.time = config.time ? config.time : 1000;		
